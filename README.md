@@ -6,5 +6,3 @@ Esta aplicación ha sido desarrollada con [Ionic Framework](http://ionicframewor
 - ```cd Bibliotecas-de-Euskadi```
 - ```ionic state restore```
 - ```ionic run ios --device```
-=======
-# Bibliotecas-de-Euskadi
