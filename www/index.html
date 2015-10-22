@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta name="format-detection" content="telephone=no">
+
+  <title></title>
+
+
+  <!-- compiled css output -->
+  <link href="css/ionic.app.css" rel="stylesheet">
+  <link href="lib/toastr/toastr.css" rel="stylesheet">
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <script src="lib/toastr/toastr.js"></script>
+  <script src="lib/lodash/lodash.js"></script>
+  <script src="lib/angular-simple-logger/dist/index.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="lib/angular-google-maps/dist/angular-google-maps.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="src/app.js"></script>
+
+  <!-- Bower -->
+  <script src="lib/x2js/xml2json.js"></script>
+  <script src="lib/angular-x2js/src/x2js.js"></script>
+
+  <!-- Config -->
+  <script src="src/core/config.js"></script>
+
+  <!-- Reusable utilities -->
+  <script src="src/util/util.module.js"></script>
+  <script src="src/util/constants.js"></script>
+  <script src="src/util/exception/exception.module.js"></script>
+  <script src="src/util/exception/exception-handler.provider.js"></script>
+  <script src="src/util/exception/exception.js"></script>
+  <script src="src/util/logger/logger.module.js"></script>
+  <script src="src/util/logger/logger.js"></script>
+  <script src="src/util/modal/modal.module.js"></script>
+  <script src="src/util/modal/modal.js"></script>
+  <script src="src/util/router/router.module.js"></script>
+  <script src="src/util/router/router.js"></script>
+
+  <!-- Towns -->
+  <script src="src/libraries/libraries.module.js"></script>
+  <script src="src/libraries/libraries.routes.js"></script>
+  <script src="src/libraries/libraries.js"></script>
+  <script src="src/libraries/libraries-details.js"></script>
+
+  <!-- Contact -->
+  <script src="src/about/about.module.js"></script>
+  <script src="src/about/about.routes.js"></script>
+  <script src="src/about/about.js"></script>
+
+  <!-- Location -->
+  <script src="src/location/location.module.js"></script>
+  <script src="src/location/location.js"></script>
+
+  <!-- Services -->
+  <script src="src/services/services.module.js"></script>
+  <script src="src/services/libraries.js"></script>
+
+</head>
+<body ng-app="app">
+  <ion-nav-view></ion-nav-view>
+</body>
+</html>

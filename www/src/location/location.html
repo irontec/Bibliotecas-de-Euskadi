@@ -1,0 +1,12 @@
+<ion-modal-view title="Location Map">
+  <div class="bar bar-header bar-positive">
+    <a class="button button-icon icon ion-ios-arrow-down" ng-click="modal.hide()"></a>
+    <div class="h1 title">{{vm.title}}</div>
+  </div>
+  <ion-content class="has-header">
+    <ui-gmap-google-map draggable="true" center="vm.map.center" zoom="vm.map.zoom">
+      <ui-gmap-marker click="vm.locationClicked(vm.marker)" idkey="1" coords="vm.marker.coords" options="vm.marker.options">
+      </ui-gmap-marker>
+    </ui-gmap-google-map>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,20 @@
+<ion-view>
+  <div class="bar bar-header bar-positive">
+    <div class="h1 title">
+      {{vm.title}}
+    </div>
+  </div>
+  <ion-content class="has-header">
+    <ion-list>
+      <span ng-repeat="province in vm.provinces">
+        <ion-item class="item-divider divider-province">{{province}}</ion-item>
+        <span ng-repeat="town in vm.towns[province]">
+          <ion-item class="item-divider divider-town">{{town}}</ion-item>
+          <ion-item ng-repeat="library in vm.locations[province][town] | orderBy: 'name'" class="item-icon-right" ui-sref="tab.libraries-details({xmlUrl: library.xmlUrl})">
+            {{library.name}}
+          </ion-item>
+        </span>
+      </span>
+    </ion-list>
+  </ion-content>
+</ion-view>
